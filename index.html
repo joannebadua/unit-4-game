@@ -12,7 +12,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
   <!-- Added a link to our external stylesheet-->
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/javascript/game.js">
 </head>
 
 <body>
@@ -37,29 +39,5 @@
             <img src="assets/1-paper-bin.png" alt="" class="img 1-paper"
               style="position:absolute; top:50px; left: 80px; z-index: -20; height: 300px">
           </div>
-
-          <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-          <script type="text/javascript">
-
-            $(document).ready(function () {
-              var firstBin = $("#1-paper");
-              var buttonValue =;
-              var userScore = "";
-              
-              // Computer creates a random number (19-120) as a goal for the player to match 
-              // with accumulated points
-              var Random = [];
-              for (var i = 19; i <= 120; i++){
-                numbers.push(i)
-              }
-              $('#randomNumber').text(Random);
-
-
-
-
-              $(".bin").on("click", function () {
-
-              });
-          </script>
 
 </body>
