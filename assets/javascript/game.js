@@ -26,6 +26,9 @@
 
 
 
-    // $(".bin").on("click", function () {
+    $("#binOne").on("click", function () {
+// need to add results when binOneTwoThreeFour clicked such as 
+// 1) adding Score inside and on the display.
+// 2) determining if this Score matches the Goal number
 
-    // }
+    })

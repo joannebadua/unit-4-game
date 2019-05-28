@@ -1,0 +1,8 @@
+body {
+    /* Typography */
+    font-size: 15px;
+    line-height: 27px;
+    /* Visual */
+    background: url(assets/images/Painted-Ladies.jpg);
+    scroll-behavior: smooth;
+  }
