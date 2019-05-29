@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+    background-image: url("https://media.giphy.com/media/26ybvdfI96NUxjJra/giphy.gif");
+    background-size: 1366px 600px;
+    background-repeat: no-repeat;
+}
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  width: 10%;
+  padding: 10px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.game {
+  content: "";
+  clear: both;
+  float:right;
+  position: relative;
+}
+
+.score {
+  /* float: right; */
+  position: absolute; 
+  padding: 50px;
+  position: fixed;
+  top: 60%;
+  left: 60%;
+  width: 400px;
+}
+</style>
+</head>
+<body>
+
+<h2>Help San Francisco recycle</h2>
+<p>Click one of the recycling bins to match your recycling points with the city goal points:</p>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="clearfix">
+  <div class="box" style="background-color:#bbb">
+        <img src="assets/images/1-paper-bin.png" alt="" class="binPic" id="binOne" style="height: 150px">
+  </div>
+  <div class="box" style="background-color:#ccc">
+        <img src="assets/images/2-metal-bin.png" alt="" class="binPic" id="binTwo" style="height: 150px">
+  </div>
+  <div class="box" style="background-color:#ddd">
+        <img src="assets/images/3-plastic-bin.png" alt="" class="binPic" id="binThree" style="height: 150px">
+  </div>
+  <div class="box" style="background-color:#eee">
+        <img src="assets/images/4-glass-bin.png" alt="" class="binPic" id="binFour" style="height: 150px">
+        </div>
+</div>
+<div class="game">
+        <div class="score" style="background-color:#bbb">
+                Goal Number: <div id="randomNumber"></div>
+            </div>
+        <div class="score" style="background-color:#ccc">
+                Actual Number: <div id="binPoints"></div>
+            </div>
+        <div class="score" style="background-color:#ddd">
+                Wins: <div id="numWins"></div>
+            </div>
+        <div class="score" style="background-color:#eee">
+                Losses: <div id="numLosses"></div>
+            </div>
+      </div>
+<p>You will be given a random number at the start of the game.
+        <br><br>
+        There are four recycling bins. By clicking on a bin, you will add a specific amount of points (trash points) to your total score. 
+        You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.
+        <br><br>
+        The value of each bin is hidden from you until you click on it.
+        Each time when the game starts, the game will change the values of each crystal. </fieldset></form>
+    </p>
+
+
+</body>
+</html>
