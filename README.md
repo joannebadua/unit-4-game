@@ -4,9 +4,10 @@
 
 # About
 This is a game to teach kids about the importance of recycling, and being aware of carbon footprint scores.
-Click the any of the four recycling bins as buttons, each secretly assigned with a random number. The more you click, the more points you accumulate. 
 
-Your goal is to match the player carboon footprint score with the goal carbon footprint score. Try and guess how much points each bin is worth so you can add the specific amount of points to meet your carbon footprint goal.  You don't know the amount until you click on the recycling bin.  You click on a recycling bin.  The player loses if their score goes above the random number.  The game restarts whenever the player wins or loses, resulting in a new goal carbon footprint score, and the player's score reset to zero. 
+The player clicks on any of the four recycling bins as buttons, each secretly assigned with a random number, and accumulates points totaling to a carbon footprint score.
+
+The goal is to match the player's carbon footprint score with the goal carbon footprint score. The player guesses how many points each bin is worth to add the specific amount of points in order to meet the carbon footprint goal.  The player only discovers the secret point systel by clicking on the recycling bins.  The player loses if their score goes above the goal.  The game restarts whenever the player wins or loses, resulting in a new goal carbon footprint score, and the player's score reset to zero. 
 
 # Technology Used:
 * [Javascript (JS)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
