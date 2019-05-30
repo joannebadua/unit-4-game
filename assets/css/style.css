@@ -1,44 +1,16 @@
   body {
-    background-image: url("https://media.giphy.com/media/ELFhLUxNqjtL2/giphy.gif");
+    background-color: #233462;
+    
+    /* background-image: url("https://media.giphy.com/media/ELFhLUxNqjtL2/giphy.gif"); */
   }
 
-  .game {
-    background-image: url("https://i.ytimg.com/vi/1TAdbMNN63I/maxresdefault.jpg");
-    background-color: #cccccc;
-    height: 600px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-size: 15px;
-    line-height: 27px;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 27px;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    padding-top: 10px;
-  }
+.container {
+  font-color: white;
+  max-width: 45%;
+  width: 45%;
+  display: inline-block;
+  margin: 0px;
+}
+.bins{
 
-  /* .instructions {
-    float: right;
-    left: 0px;
-  top: 0px;
-  /* z-index: -1; */
-    /* width: 450px;
-    height: 600px;
-    /* border: 1px solid #c3c3c3; */
-    font-size: 25px;
-    line-height: 27px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 30px;
-    background-image: url("https://media.giphy.com/media/ELFhLUxNqjtL2/giphy.gif");
-    background-size: 615px 600px;
-    background-repeat: no-repeat;
-  } */ */
-
-  .score {
-    text-align: left
-  }
+}

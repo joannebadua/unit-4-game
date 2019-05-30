@@ -61,5 +61,7 @@ $(document).ready(function () {
         // directionsText.textContent = "Guess what letter Psyduck is thinking of";        
     });
     // reset
-
+    var windowTimeout = setTimeout(function() {
+        alert("Help San Francisco Recycle. Click on the four recycling bins!");
+      }, 1000);
 });
