@@ -41,13 +41,27 @@ $(document).ready(function () {
             alert ("you win!")
             wins++; 
             binPoints = 0;
+            total = 0; 
             $('#numWins').text(wins);
+            function initializeGame() {
+                binPoints = "";
+                total = 0;
+                $(".binPoints").empty();
+                $('.binPoints').text(total);
+            }
 
         } else if (Random < total) {
             alert ("you've gone too far!");
             losses++;
             binPoints = 0;
+            total = 0; 
             $('#numLosses').text(losses);
+            function initializeGame() {
+                binPoints = "";
+                total = 0;
+                $(".binPoints").empty();
+                $('.binPoints').text(total);
+            }
         }
         // *tip: now console.log the attr. number
         // need to add results/whats going to happen when binOneTwoThreeFour clicked such as 
