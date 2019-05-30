@@ -41,13 +41,13 @@ $(document).ready(function () {
             alert ("you win!")
             wins++; 
             $('#numWins').text(wins);
-            reset();
+            $('#binPoints')[0].reset(total);
 
         } else if (Random < total) {
             alert ("you've gone too far!");
             losses++;
             $('#numLosses').text(losses);
-            reset();
+            $('#binPoints')[0].reset(total);
         }
         // *tip: now console.log the attr. number
         // need to add results/whats going to happen when binOneTwoThreeFour clicked such as 
