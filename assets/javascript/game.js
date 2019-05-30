@@ -3,6 +3,7 @@ $(document).ready(function () {
     var losses = 0;
     var binPoints = 0;
     var total = 0;
+    var random = randNum()
 
     $('#numWins').text(wins);
     $('#numLosses').text(losses);
@@ -15,8 +16,13 @@ $(document).ready(function () {
     // Computer creates a random number (19-120) as a goal for the player to match 
     // with accumulated points, then displays Random variable in text connected
     // to html id randomNumber
-    var Random = Math.floor(Math.random() * 101 + 19);
-    $('#randomNumber').text(Random);
+
+    function randNum(){
+        var random = Math.floor(Math.random() * 101 + 19);
+        return random
+    }
+    
+    $('#randomNumber').text(random);
     var recycleRandom = Math.floor(Math.random() * 12 + 1);
     console.log(recycleRandom);
     // even without the adding, build by brick the attr. for each bin
@@ -37,31 +43,23 @@ $(document).ready(function () {
         total = total + parseInt ($(this).attr("num"));
         console.log("meow", total)
         $('#binPoints').text(total); 
-        if (Random === total) {
+        if (random === total) {
             alert ("you win!")
             wins++; 
             binPoints = 0;
             total = 0; 
             $('#numWins').text(wins);
-            function initializeGame() {
-                binPoints = "";
-                total = 0;
-                $(".binPoints").empty();
-                $('.binPoints').text(total);
-            }
+            initializeGame()
+          
 
-        } else if (Random < total) {
+        } else if (random < total) {
             alert ("you've gone too far!");
             losses++;
             binPoints = 0;
             total = 0; 
             $('#numLosses').text(losses);
-            function initializeGame() {
-                binPoints = "";
-                total = 0;
-                $(".binPoints").empty();
-                $('.binPoints').text(total);
-            }
+            initializeGame()
+            
         }
         // *tip: now console.log the attr. number
         // need to add results/whats going to happen when binOneTwoThreeFour clicked such as 
@@ -75,6 +73,16 @@ $(document).ready(function () {
         // directionsText.textContent = "Guess what letter Psyduck is thinking of";        
     });
     // reset
+
+    function initializeGame() {
+        binPoints = "";
+        total = 0;
+        
+        $('#binPoints').text(total);
+
+        var random = randNum()
+        $('#randomNumber').text(random);
+    }
     var windowTimeout = setTimeout(function() {
         alert("Help San Francisco Recycle. Click on the four recycling bins!");
       }, 1000);
