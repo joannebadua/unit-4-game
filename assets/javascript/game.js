@@ -83,7 +83,4 @@ $(document).ready(function () {
         var random = randNum()
         $('#randomNumber').text(random);
     }
-    var windowTimeout = setTimeout(function() {
-        alert("Help San Francisco Recycle. Click on the four recycling bins!");
-      }, 1000);
 });
